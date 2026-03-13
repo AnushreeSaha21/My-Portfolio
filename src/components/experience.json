@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "position": "Frontend Developer Intern",
+    "company": "Ricecity.in (Sept 2023- Jan 2024)",
+    "responsibilities": [
+      "Created React components: Login, SignUp, enhancing user interaction and experience in web developmen",
+      "Mastered Git for team collaboration, version control, and efficient project management contributions",
+      "Single-handedly designed Gift Card website page aiding in increasing customer retention through vouchers"
+    ]
+  },
+  {
+    "id": 2,
+    "position": "Teaching Assistant",
+    "company": "IIT Guwahati (Jul 2025 - present)",
+    "responsibilities": [
+      "Had been TA for both lab and theory class of the course CS 1101 / CS 1105 Programming and Data Structure during July 2025 to Dec 2025",
+      "Currently been assigned TA for the course CS 1201L/ CS 1206L",
+      "Guided students to improve understanding for the  programming languages in C++ and Python"
+    ]
+  }
+]

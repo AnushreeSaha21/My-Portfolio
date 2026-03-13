@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Blogie Blog | Web App | Feb 2024-March 2024",
+    "link": "https://github.com/AnushreeSaha21/Blogie-Blog",
+    "description": [
+      "Created React components: Login, SignUp, enhancing user interaction and experience in web developmen",
+
+      "Mastered Git for team collaboration, version control, and efficient project management contributions",
+
+      "Single-handedly designed Gift Card website page aiding in increasing customer retention through voucher"
+    ]
+  },
+
+  {
+    "id": 2,
+    "name": "Photo Gifts | My part in the internship | Oct 2023-Dec 2023",
+    "link": "https://github.com/AnushreeSaha21/simple-Photogifts-website-with-reactjs",
+    "description": [
+      "Crafted E2E PhotoGift demo site, employing HTML, CSS, and React JS showcasing proficiency in frontend development and design principles.",
+
+      "Incorporated Page Header, Items for Purchase, FAQs, etc keeping locally made and frequently purchased items"
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "Location Finder | B.Tech Final year project | Sept 2022-May 2023",
+    "link": "https://docs.google.com/document/d/1hLYegwKMQyR08Tpc9AUKw9uVdX5rhC5j/edit",
+
+    "description": [
+      "Utilizing extracted EXIF data from images to pinpoint and map locations, enhancing navigation and geographical identification capabilities.",
+      "Ideated and planned E2E execution and implementation with defining project scope and findings",
+      "Used Agile Development methodology as iterative and incremental for adaptable changing requirements"
+    ]
+  }
+]

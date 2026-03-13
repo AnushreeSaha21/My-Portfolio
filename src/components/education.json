@@ -1,0 +1,30 @@
+[
+    {
+    "id": 1,
+    "degree": "Master of Technology",
+    "college": "Indian Institute of Technology Guwahati",
+    "duration": "(2025-2027)",
+    "marks": "currently pursuing"
+  },
+  {
+    "id": 2,
+    "degree": "Bachelor of Technology",
+    "college": "Regent Education and Research Foundation ",
+    "duration":"(2019-2023)",
+    "marks": "CGPA: 9.41"
+  },
+  {
+    "id": 3,
+    "degree": "Senior Secondary",
+    "college": "Kendriya Vidyalaya Barrackpore(Army)",
+    "duration": "(2018-2019)",
+    "marks": "83%"
+  },
+  {
+    "id": 4,
+    "degree": "Secondary",
+    "college": "Kendriya Vidyalaya Barrackpore(Army)",
+    "duration":"(2016-2017)",
+    "marks": "CGPA: 9.8"
+  }
+]

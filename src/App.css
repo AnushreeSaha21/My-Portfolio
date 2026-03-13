@@ -1,0 +1,877 @@
+:root {
+  --color1: #feb2b4;
+  --color2: #fedcdc;
+  --color3: #f2f2f2;
+  --color4: #ffeaa2;
+  --color5: #fce16d;
+  --color6: #fcd639;
+  --color7: #757373;
+  --color8: #000;
+  --color9: rgb(233, 236, 238);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Offset for fixed navbars */
+#education-section,
+#experience,
+#projects,
+#skills,
+#links {
+  scroll-margin-top: 80px; /* Adjust this to your navbar's height */
+}
+
+/* Theme*/
+
+/* Default body state (Light Mode) */
+body {
+  
+  background-color: white;
+  color: black;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+/* Dark Mode state */
+body.dark-mode {
+  background-color: #121212; /* A nice deep black/grey 
+  color: white;*/
+}
+
+/* Optional: Ensure your navbar links change color too if needed */
+body.dark-mode #nav a {
+  color: white;
+}
+
+body.dark-mode .nav-button:hover {
+  background: #353434;
+  border-radius: 5px;
+  padding: 10px auto 10px auto;
+}
+
+body.dark-mode .heading h2 {
+  color: white;
+}
+
+body.dark-mode a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Style the theme icon size */
+.mode img {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.mode img:hover {
+  transform: rotate(20deg);
+}
+
+/* Navbar */
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: max-content;
+  gap: 10%;
+  border-radius: 0 0 20px 20px;
+}
+
+#nav-logo img {
+  height: 80px;
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+#nav-logo img:hover {
+  transform: rotate(-5deg);
+}
+
+
+.mode img {
+  height: 40px;
+  width: 40px;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-button {
+  border-radius: 0.1rem;
+  padding: 5px;
+  margin: 20px;
+
+  transition:
+    0.3s ease-out,
+    0.3s ease-out;
+}
+
+.nav-button a {
+  color: var(--color1);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-button:hover {
+  background-color: var(--color3);
+}
+
+.mode .light {
+  background-color: #ffffff;
+}
+
+.mode .dark {
+  background-color: #161111;
+}
+
+.download-button img {
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.download-button img:hover {
+  transform: rotate(360deg);
+}
+
+/* About */
+
+#col1 {
+  background-color: var(--color1);
+  animation-delay: 0.1s;
+}
+
+#col2 {
+  background-color: var(--color2);
+  animation-delay: 0.3s;
+}
+
+#col3 {
+  background-color: var(--color3);
+  animation-delay: 0.5s;
+}
+
+#col4 {
+  background-color: var(--color4);
+  animation-delay: 0.6s;
+}
+
+#col5 {
+  background-color: var(--color5);
+  animation-delay: 0.7s;
+}
+
+#col6 {
+  background-color: var(--color6);
+  animation-delay: 0.8s;
+}
+
+#about {
+  position: relative; /* This is the anchor for the absolute text */
+  width: 100%;
+  height: 650px;
+  display: block; /* Changed from flex to prevent layout shifting */
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+}
+
+#about-bg {
+  display: flex; /* Keep this flex to align columns side-by-side */
+  width: 100%;
+  height: 100%;
+}
+
+#about-bg div {
+  height: 100%;
+  flex: 1; /* Automatically makes each div exactly 1/6th width */
+  animation: slideIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+#about-txt {
+  position: absolute; /* Lifts the text onto a new layer */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* Stacks Text Section and Contact Section */
+  align-items: center; /* Aligns everything to the left */
+  max-width: 800px; /* Prevents text from spreading too wide */
+  z-index: 20;
+}
+
+.text-section h1 {
+  font-size: 5.5rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: center;
+}
+
+#contact {
+  margin-top: 2rem; /* Space between description and links */
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 40px;
+  margin-left: 6%;
+}
+
+@media screen and (max-width: 600px) {
+    #contact-container {
+        flex-wrap: wrap;
+    }
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.email-wrapper {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-address {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+  border-bottom: 2.5px solid var(--color3);
+  display: inline-block;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+.copy-popup {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  background: #333;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.copy-popup.show {
+  opacity: 1;
+  top: -45px;
+}
+
+#links {
+  display: flex; /* Puts GitHub and LinkedIn side-by-side */
+  gap: 30px; /* Space between the two links */
+}
+
+#links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+#links img {
+  height: 30px; /* Slightly smaller to look cleaner */
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  #about-txt h1 {
+    font-size: 3.5rem;
+  }
+}
+/*
+#about-txt h4 {
+  align-self: center;
+  margin: 20%;
+  font-size: 1.0rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+  padding-left: 5.3rem;
+}
+
+#about-txt h1{
+  font-size: 5.5rem;
+  margin: 0px;
+  margin-left: 3rem;
+}
+*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Education */
+
+#education {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the heading and the pink box */
+  width: 100%;
+}
+
+.heading {
+  margin-left: 4rem;
+  font-size: 1.5rem;
+}
+
+.heading h2 {
+  width: min-content;
+  border-bottom: 2px dashed var(--color6);
+}
+
+.edu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--color2);
+  border-radius: 1rem;
+
+  /* KEY FIXES: */
+  width: 90%;
+  max-width: 1000px; /* Consistent width across all sections */
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 2px dashed var(--color1);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  width: 85%;
+  justify-content: space-between;
+  border-bottom: 4px dashed var(--color1);
+  border-right: 4px dashed var(--color1);
+  transition: 0.3s ease-out;
+  color: var(--color7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  margin: 15px 0;
+  /* KEY FIXES: */
+  width: 95%; /* Takes up most of the pink box width */
+  background-color: white; /* Makes the card stand out */
+  box-sizing: border-box;
+}
+
+.card-left {
+  left: 0;
+  align-self: center;
+}
+
+.card-right {
+  align-self: center;
+  font-weight: 700;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card:hover {
+  background-color: antiquewhite;
+  transform: translateY(-5px);
+  color: var(--color8);
+}
+
+/*
+
+  background-image: url(./assets/butterfly-doodle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+*/
+
+/* Experience */
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--color3);
+  border-radius: 1rem;
+
+  align-items: center;
+  width: 90%;
+  max-width: 1000px; /* Matches the Skills section for symmetry */
+  margin: 0 auto;
+}
+
+.card-exp {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed var(--color7);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  width: 85%;
+  justify-content: space-between;
+  border-bottom: 4px dashed var(--color7);
+  border-right: 4px dashed var(--color7);
+  transition: 0.3s ease-out;
+  color: var(--color7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin: 15px 0;
+  width: 95%; /* Takes up most of the container's width */
+  box-sizing: border-box; /* Ensures padding doesn't break the width */
+  background-color: white;
+}
+.card-exp:hover {
+  background-color: rgb(233, 236, 238);
+  transform: translateY(-5px);
+  color: var(--color8);
+}
+.card-exp h2 {
+  border-bottom: 2px dashed var(--color6);
+  width: max-content;
+  margin-bottom: 10px;
+}
+.card-exp h4 {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.card-exp ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.card-exp li {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Footer */
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 1.1rem;
+  background-color: var(--color1);
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Skills */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-skill {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 30px;
+  background-color: var(--color5);
+  border-radius: 1rem;
+  align-content: center;
+}
+
+.card-skill {
+  /*padding: 10px;
+  box-shadow: 0 4px 6px rgba(7, 7, 7, 0.05);
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: 0.2s ease-in-out;*/
+
+  flex: 1 1 250px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Keeps heading at the top */
+  align-items: center;
+
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Makes them pop against the yellow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  border: 2px dashed var(--color7);
+}
+
+.card-skill:hover {
+  transform: translateY(-1px);
+  background-color: #fde17d;
+}
+
+.card-list {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;*/
+
+  margin-top: auto; /* Pushes the list to the bottom if there is extra space */
+  margin-bottom: auto; /* Centers the list vertically within the remaining space */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.card-list span {
+  /* display: flex;
+  gap: 109px;
+  flex-wrap: wrap;
+  border: 1px;
+  margin: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.1s ease-in-out;*/
+
+  background: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-list span:hover {
+  transform: translateY(-1px);
+}
+.card-skill h2 {
+  border-bottom: 2px dashed var(--color7);
+}
+
+/* Projects */
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /*padding: 40px 0;*/
+  }
+
+.card-project {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /*
+  align-content: space-around;
+  
+  align-items: center;
+  width: 25%;
+  height: 30%;*/
+
+  gap: 30px;
+  width: 100%;
+}
+
+.project-container {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: center;
+  padding: 30px;
+  background-color: var(
+    --color2
+  ); /* Lighter yellow background for the section */
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-items {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  /* The Dashed Border logic from Experience */
+  border: 2px dashed var(--color1);
+  border-bottom: 4px dashed var(--color1);
+  border-right: 4px dashed var(--color1);
+
+  border-radius: 20px;
+  /* margin: 15px 0;*/
+  width: 95%;
+  box-sizing: border-box;
+  transition: 0.3s ease-out;
+  overflow: hidden;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: calc(45% - 15px); /* This makes 2 cards fit per row */
+  min-width: 300px; /* Ensures they don't get too skinny on small screens */
+  min-height: 300px;
+  justify-content: space-between;
+}
+
+.project-items:hover {
+  /*background-color: #fffdf5; /* Very subtle yellow tint on hover */
+  transform: translateY(-5px);
+  background-color: antiquewhite;
+  border: 2px dashed var(--color1);
+  border-right: 4px dashed var(--color1);
+  border-bottom: 4px dashed var(--color1);
+}
+
+.project-items:hover .arrow {
+  background: linear-gradient(
+    to right,
+    var(--color1),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    white,
+    white
+  );
+}
+
+.project-items h3 {
+  padding: 20px 20px 5px 20px;
+  margin: 0;
+}
+
+.project-items h3 a {
+  text-decoration: none;
+  color: var(--color8);
+  border-bottom: 2px dashed var(--color1);
+}
+
+.project-items li {
+  padding: 0 20px 20px 0px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  flex-grow: 1; /* Pushes the arrow to the bottom */
+}
+
+/* Your Arrow Footer (Remains the same as requested) */
+.arrow {
+  background: linear-gradient(
+    to right,
+    var(--color2),
+    var(--color2),
+    var(--color3),
+    white,
+    white
+  );
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  padding: 0 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.arrow:hover {
+  background: linear-gradient(
+    to right,
+    var(--color1),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    white,
+    white
+  );
+}
+
+.arrow img {
+  height: 25px;
+  width: auto;
+  transform: rotate(180deg);
+}
+
+
+
+/* to make responsive */
+
+@media screen  and (max-width: 600px) {
+
+ .text-section{
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px 0 10px;
+ }
+  .text-section p{
+    padding: 0 25px 0 25px;
+  }
+
+  /* Navbar: Stack Logo, Links, and Buttons */
+  #nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .middle {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-button {
+    margin: 5px;
+  }
+
+  .right {
+    gap: 20px;
+  }
+
+  /* About Section: Fix text overflow and layout */
+  #about {
+    height: auto; /* Let content determine height on mobile */
+    min-height: 800px;
+  }
+
+
+
+  .text-section h1 {
+    font-size: 3rem; /* Significantly smaller to fit screen */
+  }
+
+  .text-section p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  /* Contact Container: Stack Socials and Email */
+  #contact-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #links {
+    flex-wrap: wrap; /* Wraps Leetcode/GFG icons if they don't fit */
+    justify-content: center;
+  }
+
+  .email-address {
+    margin: 5px auto; /* Centers the email underline */
+  }
+
+  /* Keyframe adjustments for mobile */
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%); /* Slide from side instead of bottom for better mobile feel */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

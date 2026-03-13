@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "heading": "Programming",
+    "skills": ["C++", "JavaScript", "Python"]
+  },
+  {
+    "id":2,
+    "heading": "Programm Web Development and Framework",
+    "skills": ["HTML", "CSS", "React.js", "Node.js", "Express.js", "RESTful API design"]
+  },
+  {
+    "id":3,
+    "heading": "Databases",
+    "skills": ["PostgreSQL"]
+  },
+  {
+    "id":4,
+    "heading": "Tools and Platforms",
+    "skills": ["VS Code", "Git", "Github"]
+  }
+]

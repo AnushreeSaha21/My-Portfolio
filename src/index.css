@@ -1,0 +1,18 @@
+:root{
+  --color1:#FEB2B4;
+  --color2:#FEDCDC;
+  --color3:#F2F2F2;
+  --color4:#FFEAA2;
+  --color5:#FCE16D;
+  --color6:#FCD639;
+}
+body{
+  height: fit-content;
+  width: 100%;
+  margin: 0px;
+}
+
+a {
+    text-decoration: none;
+  }
+
