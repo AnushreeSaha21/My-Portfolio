@@ -45,17 +45,17 @@ const About = () => {
             <div id="contact-socials">
               <p className="label">Find me on:</p>
               <div id="links">
-                <a href="your-github-url">
+                <a href="https://github.com/AnushreeSaha21">
                   <img src={githubImg} alt="Github" /> GitHub
                 </a>
-                <a href="your-linkedin-url">
+                <a href="https://www.linkedin.com/in/anushree-saha-010b3a23b/">
                   <img src={linkedInImg} alt="LinkedIn" /> LinkedIn
                 </a>
-                <a href="your-github-url">
-                  <img src={leetcodeImg} alt="Github" /> Leetcode
+                <a href="yhttps://leetcode.com/u/Anushree_Saha/">
+                  <img src={leetcodeImg} alt="Leetcode" /> Leetcode
                 </a>
-                <a href="your-github-url">
-                  <img src={gfgImg} alt="Github" /> GeeksforGeeks
+                <a href="https://www.geeksforgeeks.org/profile/a23s">
+                  <img src={gfgImg} alt="GFG" /> GeeksforGeeks
                 </a>
               </div>
             </div>
