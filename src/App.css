@@ -27,7 +27,6 @@ html {
 
 /* Default body state (Light Mode) */
 body {
-  
   background-color: white;
   color: black;
   transition:
@@ -56,7 +55,7 @@ body.dark-mode .heading h2 {
   color: white;
 }
 
-body.dark-mode a{
+body.dark-mode a {
   text-decoration: none;
   color: white;
 }
@@ -93,7 +92,6 @@ body.dark-mode a{
 #nav-logo img:hover {
   transform: rotate(-5deg);
 }
-
 
 .mode img {
   height: 40px;
@@ -185,6 +183,28 @@ body.dark-mode a{
   animation-delay: 0.8s;
 }
 
+/* =================some effets============================ */
+.about-content {
+  /* The "Glass" Effect */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(10px);          /* This creates the frost effect */
+  -webkit-backdrop-filter: blur(10px);  /* For Safari support */
+  
+  /* Styling the "Glass Pane" */
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  z-index: 20;
+}
+/* ======================================================= */
+
 #about {
   position: relative; /* This is the anchor for the absolute text */
   width: 100%;
@@ -252,12 +272,13 @@ body.dark-mode a{
   gap: 100px;
   margin-top: 40px;
   margin-left: 6%;
+  margin-right: 6%;
 }
 
 @media screen and (max-width: 600px) {
-    #contact-container {
-        flex-wrap: wrap;
-    }
+  #contact-container {
+    flex-wrap: wrap;
+  }
 }
 
 .label {
@@ -303,7 +324,7 @@ body.dark-mode a{
 }
 
 #links {
-  display: flex; /* Puts GitHub and LinkedIn side-by-side */
+  display: flex; 
   gap: 30px; /* Space between the two links */
 }
 
@@ -645,7 +666,7 @@ body.dark-mode a{
 
 /* Projects */
 
-a{
+a {
   text-decoration: none;
   color: #000;
 }
@@ -656,7 +677,7 @@ a{
   align-items: center;
   width: 100%;
   /*padding: 40px 0;*/
-  }
+}
 
 .card-project {
   display: flex;
@@ -793,29 +814,34 @@ a{
   transform: rotate(180deg);
 }
 
-
-
 /* to make responsive */
 
-@media screen  and (max-width: 600px) {
+@media screen and (max-width:885px) {
+  .middle{
+    display: none;
+  }
+}
 
- .text-section{
-  display: flex;
-  flex-direction: row;
-  margin: 0 10px 0 10px;
- }
-  .text-section p{
+@media screen and (max-width: 600px) {
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+  }
+  .text-section p {
+    display: flex;
     padding: 0 25px 0 25px;
   }
 
   /* Navbar: Stack Logo, Links, and Buttons */
   #nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     padding: 10px 0;
   }
 
   .middle {
+    display: none;
     justify-content: center;
     gap: 10px;
   }
@@ -832,9 +858,18 @@ a{
   #about {
     height: auto; /* Let content determine height on mobile */
     min-height: 800px;
+    display: flex; /* Change to flex to handle the internal spacing better */
+    flex-direction: column;
   }
 
-
+  #about-bg {
+    position: absolute; /* Lock it behind the text */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Now it will fill the auto-expanded #about */
+    z-index: -1;   /* Ensure it stays behind the text */
+  }
 
   .text-section h1 {
     font-size: 3rem; /* Significantly smaller to fit screen */
@@ -866,7 +901,9 @@ a{
   /* Keyframe adjustments for mobile */
   @keyframes slideIn {
     from {
-      transform: translateX(100%); /* Slide from side instead of bottom for better mobile feel */
+      transform: translateX(
+        100%
+      ); /* Slide from side instead of bottom for better mobile feel */
       opacity: 0;
     }
     to {
