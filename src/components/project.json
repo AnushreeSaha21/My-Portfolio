@@ -33,5 +33,12 @@
       "Ideated and planned E2E execution and implementation with defining project scope and findings",
       "Used Agile Development methodology as iterative and incremental for adaptable changing requirements"
     ]
+  },
+
+  {
+    "id":4,
+    "name": "Song Recognition using LPC + LBG + HMM | Extention of course project | Dec 2025-Feb 2026",
+    "link": "https://github.com/AnushreeSaha21/song-recognition-lpc-lbg-hmm",
+    "description":["It is an end-to-end song recognition system built from scratch in C++ using LPC cepstral features, LBG vector quantization, and Hidden Markov Models.","It is an experimental extention of my course-work project named Digit-Recognition. "]
   }
 ]
