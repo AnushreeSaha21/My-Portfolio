@@ -912,5 +912,33 @@ a {
       opacity: 1;
     }
   }
+
+
+
+  /* Fix for Skill Titles */
+  .card-skill h2 {
+    width: 100%;             /* Allow it to take full width of the card */
+    font-size: 1.5rem;       /* Shrink the font size slightly for mobile */
+    line-height: 1.2;        /* Better spacing between lines */
+    word-wrap: break-word;   /* Breaks long words if necessary */
+    text-align: center;      /* Keeps it centered */
+    border-bottom: 2px dashed var(--color7); /* Ensure the underline follows the wrap */
+  }
+
+  /* Fix for Experience Titles */
+  .card-exp h2 {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    /* Remove 'width: max-content' if you have it, 
+       it forces the title to stay on one line! */
+  }
+
+  /* Fix the card padding so text doesn't touch the dashed border */
+  .card-skill, .card-exp {
+    padding: 15px;
+    box-sizing: border-box;
+  }
 }
 
