@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "name": "Multi-Process-File-Synchronization-System-using-Pipes | March 2026",
+    "link": "https://github.com/AnushreeSaha21/Multi-Process-File-Synchronization-System-using-Pipes",
+    "description": [
+      "Built a multi-process system in C++ using fork() and pipes for inter-process communication","Implemented bidirectional message passing between processes using UNIX pipes","Designed a file synchronization mechanism between two directories","Handled partial failures by transmitting error states along with intermediate data","Implemented custom serialization/deserialization for structured data transfer"
+    ]
+  },
+  {
+    "id": 2,
     "name": "Blogie Blog | Web App | Feb 2024-March 2024",
     "link": "https://github.com/AnushreeSaha21/Blogie-Blog",
     "description": [
@@ -13,7 +21,7 @@
   },
 
   {
-    "id": 2,
+    "id": 3,
     "name": "Photo Gifts | My part in the internship | Oct 2023-Dec 2023",
     "link": "https://github.com/AnushreeSaha21/simple-Photogifts-website-with-reactjs",
     "description": [
@@ -24,7 +32,7 @@
   },
 
   {
-    "id": 3,
+    "id": 4,
     "name": "Location Finder | B.Tech Final year project | Sept 2022-May 2023",
     "link": "https://docs.google.com/document/d/1hLYegwKMQyR08Tpc9AUKw9uVdX5rhC5j/edit",
 
@@ -36,7 +44,7 @@
   },
 
   {
-    "id":4,
+    "id":5,
     "name": "Song Recognition using LPC + LBG + HMM | Extention of course project | Dec 2025-Feb 2026",
     "link": "https://github.com/AnushreeSaha21/song-recognition-lpc-lbg-hmm",
     "description":["It is an end-to-end song recognition system built from scratch in C++ using LPC cepstral features, LBG vector quantization, and Hidden Markov Models.","It is an experimental extention of my course-work project named Digit-Recognition. "]
