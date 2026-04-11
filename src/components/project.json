@@ -1,6 +1,18 @@
 [
   {
     "id": 1,
+    "name": "DetectLLM: Zero-Shot AI Text Detection | Jan 2026 - Present",
+    "link": "https://github.com/AnushreeSaha21/DetectLLM-Zero-Shot-AI-Text-Detection.git",
+    "description": [
+      "Conducted in-depth study of zero-shot detection 
+using log-rank statistics, reproducing key 
+results from DetectLLM","Compared perturbation-free vs perturbation-based 
+approaches, showing NPR’s efficiency under 
+constrained compute"
+    ]
+  },
+  {
+    "id": 2,
     "name": "Multi-Process-File-Synchronization-System-using-Pipes | March 2026",
     "link": "https://github.com/AnushreeSaha21/Multi-Process-File-Synchronization-System-using-Pipes",
     "description": [
@@ -8,7 +20,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Blogie Blog | Web App | Feb 2024-March 2024",
     "link": "https://github.com/AnushreeSaha21/Blogie-Blog",
     "description": [
@@ -21,7 +33,7 @@
   },
 
   {
-    "id": 3,
+    "id": 4,
     "name": "Photo Gifts | My part in the internship | Oct 2023-Dec 2023",
     "link": "https://github.com/AnushreeSaha21/simple-Photogifts-website-with-reactjs",
     "description": [
@@ -32,7 +44,7 @@
   },
 
   {
-    "id": 4,
+    "id": 5,
     "name": "Location Finder | B.Tech Final year project | Sept 2022-May 2023",
     "link": "https://docs.google.com/document/d/1hLYegwKMQyR08Tpc9AUKw9uVdX5rhC5j/edit",
 
@@ -44,7 +56,7 @@
   },
 
   {
-    "id":5,
+    "id":6,
     "name": "Song Recognition using LPC + LBG + HMM | Extention of course project | Dec 2025-Feb 2026",
     "link": "https://github.com/AnushreeSaha21/song-recognition-lpc-lbg-hmm",
     "description":["It is an end-to-end song recognition system built from scratch in C++ using LPC cepstral features, LBG vector quantization, and Hidden Markov Models.","It is an experimental extention of my course-work project named Digit-Recognition. "]
