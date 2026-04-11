@@ -4,12 +4,9 @@
     "name": "DetectLLM: Zero-Shot AI Text Detection | Jan 2026 - Present",
     "link": "https://github.com/AnushreeSaha21/DetectLLM-Zero-Shot-AI-Text-Detection.git",
     "description": [
-      "Conducted in-depth study of zero-shot detection 
-using log-rank statistics, reproducing key 
-results from DetectLLM","Compared perturbation-free vs perturbation-based 
-approaches, showing NPR’s efficiency under 
-constrained compute"
-    ]
+    "Conducted in-depth study of zero-shot detection using log-rank statistics, reproducing key results from DetectLLM",
+    "Compared perturbation-free vs perturbation-based approaches, showing NPR’s efficiency under constrained compute"
+  ]
   },
   {
     "id": 2,
